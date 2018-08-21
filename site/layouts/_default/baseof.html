@@ -107,33 +107,12 @@
                   <span>Deals</span>
                 </a>
               </li>
-              <li class="nav__item has-subnav">
-                <a href="#" class="nav__link js-open-subnav" data-wd-id="menuUsername">
-                  <span>Chris
-                    <svg class="icon icon-expand_more">
-                      <use xlink:href="#icon-expand_more"></use>
-                    </svg>
-                  </span>
-                </a>
-                <ul class="nav nav--sub">
-                  <li class="nav__item">
-                    <a href="/account" class="nav__link">Your account</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="/account/proofs" class="nav__link">Your proofs</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="/account/logout" class="nav__link" data-wd-id="logoutLink">Logout</a>
-                  </li>
-                </ul>
-              </li>
               <li class="nav__item">
                 <a href="/cart" class="nav__link primary">
                   <span style="position: relative;">
                     <svg class="icon icon-shopping_cart primary">
                       <use xlink:href="#icon-shopping_cart"></use>
                     </svg>
-                    <span class="pill">8</span>
                   </span>
                 </a>
               </li>
@@ -153,7 +132,6 @@
     <div id="content-container" class="content-container--home" itemscope="" itemtype="http://schema.org/Product">
       <!-- Content Goes Here -->
       <div id="pageContent">
-
         {{ block "main" . }}{{ end }}
       </div>
 
@@ -162,32 +140,6 @@
     </div>
   </div>
   <!-- End page header/content -->
-
-  <!-- Start the snap engage JS include -->
-
-  <!-- begin SnapEngage code -->
-  <script type="text/javascript">
-    (function () {
-      var se = document.createElement('script');
-      se.type = 'text/javascript';
-      se.async = true;
-      se.src = '//storage.googleapis.com/code.snapengage.com/js/920e4c4f-b838-4c9c-a56f-e5f1affcfe68.js';
-      var done = false;
-      se.onload = se.onreadystatechange = function () {
-        if (!done && (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete')) {
-          done = true;
-          /* Place your SnapEngage JS API code below */
-          /* SnapEngage.allowChatSound(true); Example JS API: Enable sounds for Visitors. */
-          SnapEngage.allowOffline(false);
-
-          SnapEngage.setUserEmail('chris.taggart@canvaspop.com');
-        }
-      };
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(se, s);
-    })();
-  </script>
-  <!-- end SnapEngage code -->
 
   <!-- End the snap engage JS include -->
 
