@@ -1,6 +1,15 @@
-<a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
-	<h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
+<a href="{{ .Permalink }}" class="guide">
+	<article class="guide__article">
+		<div class="guide__background" style="background: url('{{  .Params.image }}') center center no-repeat; background-size: cover;"></div>
+		<header class="guide__header">
+			<h2 class="guide__heading">{{ .Title }}</h2>
+			<p class="guide__subheading">{{ .Description }}</p>
+		</header>
+	</article>
+</a>
+<!-- <a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
+	<h2 class="f3 b lh-title mb1 primary"></h2>
 	<p class="mid-gray lh-title mb2">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
 	<p class="mb0">{{ .Description }}</p>
 	<p class="link b dib black mb0">Read more →</p>
-</a>
+</a> -->
